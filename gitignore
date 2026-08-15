@@ -1,0 +1,10 @@
+# Never commit real database credentials
+config.php
+
+# Never commit raw survey/database exports unless confirmed safe to share
+info_tech_feedback*
+*.sql
+
+# OS files
+.DS_Store
+Thumbs.db
