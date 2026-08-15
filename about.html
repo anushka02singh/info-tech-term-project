@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* Mobile navbar fix */
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Active nav link fix */
+.nav-link.active {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+  .about-wrapper {
+    padding: 40px 15px 60px 15px;
+  }
+
+  .about-wrapper h2 {
+    color: #4a235a;
+    margin-bottom: 30px;
+  }
+
+  .about-card {
+    background: #ffffff;
+    border: 2px solid #c39bd3;
+    border-radius: 12px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+
+  .about-card h3 {
+    color: #4a235a;
+  }
+
+  .about-card p {
+    font-size: 1.1rem;
+  }
+
+  .about-sidebar {
+    background: #ede3f3;
+    border: 3px solid #c39bd3;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-top: 30px;
+  }
+
+  .about-sidebar h3 {
+    color: #4a235a;
+  }
+
+  footer {
+    background-color: #4a235a;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 40px;
+  }
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <a class="navbar-brand" href="home.html">Term Project</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Info Tech</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="intro.html">Info Tech Intro</a>
+          <a class="dropdown-item" href="open-source.html">Open Source</a>
+          <a class="dropdown-item" href="survey.html">Open Source Survey</a>
+          <a class="dropdown-item" href="tools.html">Tools</a>
+          <a class="dropdown-item" href="tools-survey.php">Tools Survey</a>
+          <a class="dropdown-item" href="results.php">Survey Results</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Interests</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="interests.html">Interests Intro</a>
+          <a class="dropdown-item" href="movie1.html">Movie 1</a>
+          <a class="dropdown-item" href="movie2.html">Movie 2</a>
+          <a class="dropdown-item" href="movie3.html">Movie 3</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="container-fluid about-wrapper">
+
+  <h1 style="text-align: center;">About Me</h1>
+
+  <!-- Introduction Section -->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="about-card">
+        <h3>Introduction</h3>
+        <p>
+          Hello! My name is Anushka, and I'm a part-time graduate student currently pursuing a course in Information Technology. This project is the culmination of my learning journey, where I combine the technical skills gained throughout the semester, including HTML5, CSS, Bootstrap, JavaScript, PHP, and MySQL, to create a functional and aesthetic website.
+        </p>
+        <p>
+          Through this project, I wanted to explore how technology can create personalized and engaging user experiences. The site you see here is a product of my passion for both web development and my interest in romantic comedies.
+        </p>
+      </div>
+    </div>
+
+    <!-- Fun Facts Section -->
+    <div class="col-md-6">
+      <div class="about-card">
+        <h3>Fun Facts</h3>
+        <ul>
+          <li>I'm a big fan of romantic comedies, especially from the late '90s and early '00s.</li>
+          <li>I have a hobby of creating small websites and experimenting with different design styles.</li>
+          <li>When I'm not coding, you can find me binge-watching rom-coms or reading romance novels.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Link Section -->
+  <div class="row justify-content-center">
+  <div class="col-md-10">
+    <div class="about-sidebar text-center">
+      <h3>Check Out My Portfolio</h3>
+      <p>
+        If you'd like to explore more of my work, feel free to visit my personal portfolio where I showcase my projects, design work, and more.
+      </p>
+      <a class="btn btn-primary btn-lg mt-3" 
+         href="https://anushka0singh.wixsite.com/myportfolio" 
+         target="_blank">
+         Visit My Portfolio
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>Created for InfoTech Classes</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

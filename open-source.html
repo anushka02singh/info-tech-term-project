@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Open-Source Tool Evaluation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      background-color: #f7f3f8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Active nav fix */
+.nav-link.active {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+
+    .page-wrap {
+      flex: 1;
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .rollover-img {
+      float: left;
+      width: 260px;
+      height: 160px;
+      margin: 10px 20px 15px 0;
+      object-fit: cover;
+      border: 3px solid #c39bd3;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .rollover-img:hover {
+      transform: scale(1.05);
+    }
+
+    .note {
+      background: #ede3f3;
+      border-left: 5px solid #c39bd3;
+      padding: 12px 15px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .resource-cta {
+      background: #f3e9f7;
+      border: 3px solid #c39bd3;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .decorative-divider {
+    border-top: 3px solid #c39bd3;
+    width: 60%;
+    margin: 40px auto;
+  }
+
+    footer {
+      background-color: #4a235a;
+      color: white;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: auto;
+    }
+  </style>
+
+  <script>
+    function rollover(id, newSrc) {
+      document.getElementById(id).src = newSrc;
+    }
+  </script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <a class="navbar-brand" href="home.html">Term Project</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown">Info Tech</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="intro.html">Info Tech Intro</a>
+          <a class="dropdown-item active" href="open-source.html">Open Source</a>
+          <a class="dropdown-item" href="survey.html">Open Source Survey</a>
+          <a class="dropdown-item" href="tools.html">Tools</a>
+          <a class="dropdown-item" href="tools-survey.php">Tools Survey</a>
+          <a class="dropdown-item" href="results.php">Survey Results</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Interests</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="interests.html">Interests Intro</a>
+          <a class="dropdown-item" href="movie1.html">Movie 1</a>
+          <a class="dropdown-item" href="movie2.html">Movie 2</a>
+          <a class="dropdown-item" href="movie3.html">Movie 3</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<main class="page-wrap">
+
+  <h1>Open-Source Tool Evaluation: Drupal</h1>
+
+  <h2>Introduction</h2>
+  <p>
+    Drupal is an open-source content management system widely used for building websites. It is highly customizable, scalable, and supported by a strong community. In my personal experience working as part of the Rutgers Marketing Department Web Design team, I have used Drupal extensively to maintain and improve more than 10 Student Affairs department websites.
+  </p>
+
+  <h2>Uses & Features</h2>
+
+  <img id="img1" class="rollover-img" src="drupal_logo.jpg"
+       onmouseover="rollover('img1','LearnDrupal.jpg')"
+       onmouseout="rollover('img1','drupal_logo.jpg')" alt="Drupal Logo">
+
+  <img id="img2" class="rollover-img" src="drupal_homepage.png"
+       onmouseover="rollover('img2','drupal_edit.png')"
+       onmouseout="rollover('img2','drupal_homepage.png')" alt="Drupal Editor">
+
+  <p>
+    Drupal allows libraries and institutions to manage large amounts of digital content, from event calendars to user directories. It supports modules for user permissions, workflow management, and accessibility compliance.
+  </p>
+
+  <p>
+    Drupal’s modular architecture supports custom content types, views, and layouts, allowing metadata-rich exhibits and flexible page design while keeping branding consistent.
+  </p>
+
+  <div style="clear: both;"></div>
+
+  <h2>Current Usage</h2>
+  <p>
+    Drupal powers millions of websites globally, including higher education institutions, government agencies, and nonprofits. Its multisite capabilities allow universities to operate multiple related websites efficiently.
+  </p>
+
+  <div class="note">
+    BuiltWith reports over 400,000 active Drupal sites, and W3Techs lists Drupal at about 1.1% of all CMS usage worldwide.
+  </div>
+
+  <hr class="decorative-divider">
+
+  <!-- CARD SECTION -->
+  <h2 class="mt-5">Advantages & Disadvantages</h2>
+
+  <div class="row">
+
+    <!-- Open Source Card -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Open-Source Software</h5>
+          <p><strong>Advantages:</strong></p>
+          <p>Cost-effective, community-driven development, transparency, flexibility, no vendor lock-in.</p>
+
+          <p><strong>Disadvantages:</strong></p>
+          <p>Requires technical expertise, ongoing updates, compatibility testing, security maintenance.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drupal Card -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Drupal Platform</h5>
+          <p><strong>Advantages:</strong></p>
+          <p>Strong security, scalable architecture, multilingual & accessibility support, massive community.</p>
+
+          <p><strong>Disadvantages:</strong></p>
+          <p>Steep learning curve, complex upgrades, heavy reliance on contributed modules.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <hr class="decorative-divider">
+
+  <div class="resource-cta">
+    <h3>Explore Drupal & Open-Source Resources</h3>
+    <p>Want to learn more about Drupal and open-source tools? These resources were used for this evaluation:</p>
+
+    <ul class="list-unstyled">
+      <li><a href="https://www.drupal.org/docs" target="_blank">Drupal Documentation</a></li>
+      <li><a href="https://www.drupal.org/forum" target="_blank">Drupal Community Forums</a></li>
+      <li><a href="https://trends.builtwith.com/cms/Drupal" target="_blank">BuiltWith Usage Stats</a></li>
+      <li><a href="https://w3techs.com/technologies/details/cm-drupal/all/all" target="_blank">W3Techs Market Share</a></li>
+      <li>Rutgers RCCL</li>
+      <li>Personal Rutgers Marketing Department Experience</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>Created for InfoTech Classes</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

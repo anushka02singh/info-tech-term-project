@@ -1,0 +1,104 @@
+/* =========================
+   GLOBAL THEME ONLY
+========================= */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #f7f3f8;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   HEADINGS & TEXT
+========================= */
+
+h1, h2, h3 {
+  color: #4a235a;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR (PROJECT 3 THEME)
+========================= */
+
+.navbar {
+  background-color: #4a235a !important;
+}
+
+.navbar .navbar-brand {
+  color: #ffccff !important;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffb3e6 !important;
+}
+
+.navbar .navbar-nav .active {
+  color: #ff66b2 !important;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ✅ FORCE WHITE CAROUSEL CAPTIONS */
+.carousel-caption,
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3,
+.carousel-caption h4,
+.carousel-caption h5,
+.carousel-caption p {
+  color: #ffffff !important;
+}
+
+/* ✅ Dark readable background */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
+/* =========================
+   FOOTER (GLOBAL)
+========================= */
+
+footer {
+  background-color: #4a235a;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 0.95rem;
+}
